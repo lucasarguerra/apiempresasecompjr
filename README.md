@@ -201,7 +201,7 @@ O módulo de testes utiliza um banco SQLite isolado para não afetar o banco pri
 
 <p><strong>Para rodar os testes:</strong></p>
 <pre><code>pytest test_api_empresas.py -v</code></pre>
-
+Importante ressaltar que para uma melhor experiência usando os testes, é necessário mexer um pouco no código, já que o de atualização vai falhar no primeiro, pois não existe nenhuma empresa cadastrada previamente.
 <hr>
 
 <h2>Comentários no Código</h2>
