@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-
+from datetime import date
 
 class EmpresaDadosGerais(BaseModel):
     name: str
@@ -8,10 +8,12 @@ class EmpresaDadosGerais(BaseModel):
     ramo_atuacao:str
     telefone:str
     email:str
+    data_de_cadastro: date
+
 
 class EmpresaDadosAtualizados(BaseModel):
     name:str
     cidade:str
-    modo_atuacao:str
+    ramo_atuacao:str
     email:str
-    tel:str
+    telefone:str
